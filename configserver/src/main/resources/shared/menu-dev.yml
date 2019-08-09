@@ -1,0 +1,15 @@
+server:
+  port: 8020
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloud-diancan?useUnicode=true
+    password: chengyang
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: menu
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.cy.entity
